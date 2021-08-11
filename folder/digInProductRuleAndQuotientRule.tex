@@ -181,75 +181,75 @@ Using the sum rule and the product rule, write with me
 \end{example}
 
 
-%% \section{The quotient rule}
+\section{The quotient rule}
 
 
-%% We'd like to have a formula to compute
-%% \[
-%% \ddx \frac{f(x)}{g(x)}
-%% \]
-%%  This brings us to our next derivative rule.
+We'd like to have a formula to compute
+\[
+\ddx \frac{f(x)}{g(x)}
+\]
+ This brings us to our next derivative rule.
 
-%% \begin{theorem}[The quotient rule]\index{derivative rules!quotient}\index{quotient rule}\label{theorem:quotient-rule}
-%% If $f$ and $g$ are differentiable, then
-%% \[
-%% \ddx \frac{f(x)}{g(x)} = \frac{f'(x)g(x)-f(x)g'(x)}{g(x)^2}.
-%% \]
-%% \end{theorem}
-%% %% \begin{explanation}
-%% %% First note that if we knew how to compute
-%% %% \[
-%% %% \ddx \frac{1}{g(x)}
-%% %% \]
-%% %% then we could use the product rule to complete our explanation.  Write
-%% %% \begin{align*}
-%% %% \ddx\frac{1}{g(x)}&=\lim_{h\to0} \frac{\frac{1}{g(x+h)}-\frac{1}{g(x)}}{h} \\
-%% %% &=\lim_{h\to0} \frac{\frac{g(\answer[given]{x})-g(\answer[given]{x+h})}{g(x+h)g(x)}}{h} \\
-%% %% &=\lim_{h\to0} \frac{g(x)-g(x+h)}{g(x+h)g(x)h} \\
-%% %% &=\lim_{h\to0} -\frac{g(x+h)-g(x)}{h} \frac{1}{g(x+h)g(x)} \\
-%% %% &=-\frac{g'(x)}{g(x)^2}.
-%% %% \end{align*}
-%% %% Now we can put this together with the product rule:
-%% %% \begin{align*}
-%% %% \ddx\frac{f(x)}{g(x)} &=f(x)\frac{-g'(x)}{g(x)^2}+f'(x)\frac{1}{g(x)}\\
-%% %% &=\frac{-f(x)g'(x)+f'(x)g(x)}{g(x)^2}\\
-%% %% &=\frac{f'(x)g(x)-f(x)g'(x)}{g(x)^2}.
-%% %% \end{align*}
-
-%% %% \end{explanation}
-
-
-%% \begin{example}
-%% Compute:
-%% \[
-%% \ddx \frac{x^2+1}{x^3-3x}
-%% \]
-
+\begin{theorem}[The quotient rule]\index{derivative rules!quotient}\index{quotient rule}\label{theorem:quotient-rule}
+If $f$ and $g$ are differentiable, then
+\[
+\ddx \frac{f(x)}{g(x)} = \frac{f'(x)g(x)-f(x)g'(x)}{g(x)^2}.
+\]
+\end{theorem}
 %% \begin{explanation}
-%% Write with me
-%% \begin{align*}
-%% \ddx \frac{x^2+1}{x^3-3x} &= \frac{2x(\answer[given]{x^3-3x})-(\answer[given]{x^2+1})(3x^2-3)}{(\answer[given]{x^3-3x})^2}\\
-%% &=\frac{-x^4-6x^2+3}{(\answer[given]{x^3-3x})^2}.
-%% \end{align*}
-%% \end{explanation}
-%% \end{example}
-%% \begin{example}
-%% Compute:
+%% First note that if we knew how to compute
 %% \[
-%% \ddx \frac{\sin{x}}{x}
+%% \ddx \frac{1}{g(x)}
 %% \]
-
-%% \begin{explanation}
-%% Write with me
+%% then we could use the product rule to complete our explanation.  Write
 %% \begin{align*}
-%% \ddx \frac{\sin{x}}{x} &=  \frac{\cos{x}\cdot x-\sin{x}\cdot1}{x^2}
+%% \ddx\frac{1}{g(x)}&=\lim_{h\to0} \frac{\frac{1}{g(x+h)}-\frac{1}{g(x)}}{h} \\
+%% &=\lim_{h\to0} \frac{\frac{g(\answer[given]{x})-g(\answer[given]{x+h})}{g(x+h)g(x)}}{h} \\
+%% &=\lim_{h\to0} \frac{g(x)-g(x+h)}{g(x+h)g(x)h} \\
+%% &=\lim_{h\to0} -\frac{g(x+h)-g(x)}{h} \frac{1}{g(x+h)g(x)} \\
+%% &=-\frac{g'(x)}{g(x)^2}.
 %% \end{align*}
+%% Now we can put this together with the product rule:
+%% \begin{align*}
+%% \ddx\frac{f(x)}{g(x)} &=f(x)\frac{-g'(x)}{g(x)^2}+f'(x)\frac{1}{g(x)}\\
+%% &=\frac{-f(x)g'(x)+f'(x)g(x)}{g(x)^2}\\
+%% &=\frac{f'(x)g(x)-f(x)g'(x)}{g(x)^2}.
+%% \end{align*}
+
 %% \end{explanation}
-%% \end{example}
-%% It is often possible to calculate derivatives in more than one way, as
-%% we have already seen. Since every quotient can be written as a
-%% product, it is always possible to use the product rule to compute the
-%% derivative, though it is not always simpler.
+
+
+\begin{example}
+Compute:
+\[
+\ddx \frac{x^2+1}{x^3-3x}
+\]
+
+\begin{explanation}
+Write with me
+\begin{align*}
+\ddx \frac{x^2+1}{x^3-3x} &= \frac{2x(\answer[given]{x^3-3x})-(\answer[given]{x^2+1})(3x^2-3)}{(\answer[given]{x^3-3x})^2}\\
+&=\frac{-x^4-6x^2+3}{(\answer[given]{x^3-3x})^2}.
+\end{align*}
+\end{explanation}
+\end{example}
+\begin{example}
+Compute:
+\[
+\ddx \frac{\sin{x}}{x}
+\]
+
+\begin{explanation}
+Write with me
+\begin{align*}
+\ddx \frac{\sin{x}}{x} &=  \frac{\cos{x}\cdot x-\sin{x}\cdot1}{x^2}
+\end{align*}
+\end{explanation}
+\end{example}
+It is often possible to calculate derivatives in more than one way, as
+we have already seen. Since every quotient can be written as a
+product, it is always possible to use the product rule to compute the
+derivative, though it is not always simpler.
 
 %% \begin{example}
 %% Compute: 
