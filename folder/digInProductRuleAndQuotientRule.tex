@@ -251,7 +251,7 @@ we have already seen. Since every quotient can be written as a
 product, it is always possible to use the product rule to compute the
 derivative, though it is not always simpler.
 
-%% \begin{example}
+%% \begin{example} %% BADBAD ERROR BELOW
 %% Compute: 
 %% \[
 %% \ddx \frac{625-x^2}{\sqrt{x}}
@@ -275,22 +275,22 @@ derivative, though it is not always simpler.
 %% \]
 %% \end{explanation}
 %% \end{example}
-%% \begin{example}
-%%   Suppose we have two functions, $f$, and $g$, and we know that $f(4) = 3$, $f'(4) = 5$, $g(4) = -2$, and $g'(4) = 2$.
-%%   What is the slope of the tangent line to the curve $y=\frac{f(x)}{g(x)}$ at the point where $x = 4$?
-%%   \begin{explanation}
-%%   	 The slope of the tangent line to the curve  $y=\frac{f(x)}{g(x)}$ at $x = 4$ is given by $ \eval{\ddx\frac{f(x)}{g(x)}}_{x=4}$.
+\begin{example}
+  Suppose we have two functions, $f$, and $g$, and we know that $f(4) = 3$, $f'(4) = 5$, $g(4) = -2$, and $g'(4) = 2$.
+  What is the slope of the tangent line to the curve $y=\frac{f(x)}{g(x)}$ at the point where $x = 4$?
+  \begin{explanation}
+  	 The slope of the tangent line to the curve  $y=\frac{f(x)}{g(x)}$ at $x = 4$ is given by $ \eval{\ddx\frac{f(x)}{g(x)}}_{x=4}$.
 	 
-%% 	  By the QuotientRule, this derivative is given by 
-%% 	 \begin{align*}
-%% \eval{\ddx\frac{f(x)}{g(x)}}_{x=4} &=\eval{\frac{f'(x)g(x)-f(x)g'(x)}{\left(g(x)\right)^2}}_{x=4}\\
-%% &=\frac{f'(4)g(4)-f(4)g'(4)}{\left(g(4)\right)^2}\\
-%% &=\frac{5(-2)-3\cdot2}{\left(-2\right)^2}\\
-%% &=\frac{-10-6}{4}\\
-%% &=-4
-%% \end{align*}
-%% 	   \end{explanation}
-%% \end{example} 
+	  By the QuotientRule, this derivative is given by 
+	 \begin{align*}
+\eval{\ddx\frac{f(x)}{g(x)}}_{x=4} &=\eval{\frac{f'(x)g(x)-f(x)g'(x)}{\left(g(x)\right)^2}}_{x=4}\\
+&=\frac{f'(4)g(4)-f(4)g'(4)}{\left(g(4)\right)^2}\\
+&=\frac{5(-2)-3\cdot2}{\left(-2\right)^2}\\
+&=\frac{-10-6}{4}\\
+&=-4
+\end{align*}
+	   \end{explanation}
+\end{example} 
 %% \begin{example}
 %%   Suppose we have two functions, $f$, and $g$, and we know that $f(4) = 3$, $f'(4) = 5$, $g(4) = -2$, and $g'(4) = 2$.
 %%   What is the slope of the tangent line to the curve $y=\frac{xf(x)}{g(x)}$ at the point where $x = 4$?
