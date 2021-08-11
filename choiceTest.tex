@@ -1,24 +1,24 @@
 %\documentclass[handout]{ximera}
 \documentclass[web]{ximera}
 
-\makeatletter
-\pdfsetrandomseed 1
-\newcommand{\randomcolor}{%
-  \definecolor{randomcolor}{RGB}
-   {
-    \pdfuniformdeviate 256,
-    \pdfuniformdeviate 256,
-    \pdfuniformdeviate 256
-   }%
-  \color{randomcolor}%
-}
-\let\old@rule\@rule
-\def\@rule[#1]#2#3{\randomcolor\old@rule[#1]{#2}{#3}\color{black}}
+%% \makeatletter
+%% \pdfsetrandomseed 1
+%% \newcommand{\randomcolor}{%
+%%   \definecolor{randomcolor}{RGB}
+%%    {
+%%     \pdfuniformdeviate 256,
+%%     \pdfuniformdeviate 256,
+%%     \pdfuniformdeviate 256
+%%    }%
+%%   \color{randomcolor}%
+%% }
+%% \let\old@rule\@rule
+%% \def\@rule[#1]#2#3{\randomcolor\old@rule[#1]{#2}{#3}\color{black}}
 
 
 
 
-\makeatother
+%% \makeatother
 
 
 \title{Choice test}
