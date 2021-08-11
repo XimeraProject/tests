@@ -87,22 +87,20 @@
   A test of answer commands.
 \end{abstract}
 \maketitle
+
+Let's test answer in dispay math:
 \[
 \answer{5^4}
 \]
 
-
-
-\[
-\begin{array}{|c|c|}\hline
-  \text{How does the answer look HERE:} & \answer{GREAT} \\ \hline
-\end{array}
-\]
+I know dollar signs are the same\dots
 $$
 \answer{5^4}
 $$
 This is it, right? $\answer{5^5}$
 
+
+We should also test AMS environments.
 \begin{gather}
   \answer{5_6}
 \end{gather}
@@ -114,11 +112,13 @@ This is it, right? $\answer{5^5}$
 \end{align*}
 
 
-%% what is $\answer{3_4}$ here
+How does the answer do in the array?
 
-%% \begin{gather}
-%%   \answer{5_6}
-%% \end{gather}
+\[
+\begin{array}{|c|c|}\hline
+  \text{How does the answer look HERE:} & \answer{GREAT} \\ \hline
+\end{array}
+\]
 
 
 \end{document}
